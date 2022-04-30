@@ -2,6 +2,7 @@ const express = require('express');
 const PORT = process.env.PORT || 3001;
 
 const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('./routes/apiRoutes');
 
 // instantiate express for use in server side programming
 const app = express();
@@ -17,6 +18,7 @@ app.use(express.static('public'));
 
 // routes
 app.use('/', htmlRoutes);
+app.use('/api', apiRoutes);
 
 
 app.listen(PORT, () => {
