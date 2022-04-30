@@ -1,7 +1,7 @@
 const path = require('path');
-const db = require('../../db/db.json');
+let db = require('../../db/db.json');
 const router = require('express').Router();
-const { validateNote, createNewNote, filterOutId } = require('../../lib/notes');
+const { validateNote, createNewNote, filterOutId, pushFilteredArray } = require('../../lib/notes');
 
 // for random id generation, using crypto node module
 const crypto = require('crypto');
@@ -22,15 +22,14 @@ router.post('/notes', (req, res) => {
     } else {
         const note = createNewNote(req.body, db);
         res.json(note);
-        console.log(db);
     }
 })
 
 router.delete('/notes/:id', (req, res) => {
-    console.log(req.params.id)
-    const result = filterOutId(req.params.id, db);
-    console.log(result);
-    res.json(req.params.id);
+    let filteredArray = filterOutId(req.params.id, db);
+    db = filteredArray;
+    pushFilteredArray(filteredArray);
+    res.json(filteredArray);
 })
 
 module.exports = router
