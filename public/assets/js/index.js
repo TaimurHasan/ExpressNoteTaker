@@ -3,6 +3,7 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+let delBtn;
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
@@ -81,10 +82,10 @@ const handleNoteSave = () => {
 const handleNoteDelete = (e) => {
   // Prevents the click listener for the list from being called when the button inside of it is clicked
   e.stopPropagation();
-
+  console.log(e.target);
   const note = e.target;
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
-
+  console.log(noteId);
   if (activeNote.id === noteId) {
     activeNote = {};
   }
@@ -146,6 +147,7 @@ const renderNoteList = async (notes) => {
         'text-danger',
         'delete-note'
       );
+
       delBtnEl.addEventListener('click', handleNoteDelete);
 
       liEl.append(delBtnEl);
