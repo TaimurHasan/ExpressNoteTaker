@@ -11,6 +11,7 @@ router.get('/notes', (req, res) => {
     res.json(results);
 })
 
+// allow user to use the post method on the api call to save notes to the database
 router.post('/notes', (req, res) => {
     // assigning random id to note
     let id = crypto.randomBytes(16).toString('hex');
@@ -25,9 +26,15 @@ router.post('/notes', (req, res) => {
     }
 })
 
+// allows user to use delete method on api call to delete selected note
 router.delete('/notes/:id', (req, res) => {
+    // filter out the note which has a matching id to request parameter
     let filteredArray = filterOutId(req.params.id, db);
+
+    // saving database as new filtered array for use in other parts of code
     db = filteredArray;
+
+    // saving new array in the db.json file
     pushFilteredArray(filteredArray);
     res.json(filteredArray);
 })
