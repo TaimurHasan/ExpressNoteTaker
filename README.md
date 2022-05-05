@@ -5,6 +5,17 @@ The ExpressNoteTaker is an application made using the express.js web application
 <br/>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**Languages and Technologies Used:
+- Javascript
+- node.js
+- express.js
+- jest
+- Heroku
+- HTML
+- CSS
+
+[Live Application](https://expressnotetakerbytaimur.herokuapp.com/notes)
+
 ## Table of Contents
 
 1. [ Usage ](#usage)
@@ -17,8 +28,11 @@ The ExpressNoteTaker is an application made using the express.js web application
 <a name="usage"></a>
 
 ## Usage
-To use this application, please navigate to live deployed version on [Heroku](https://expressnotetakerbytaimur.herokuapp.com/notes)
-
+To use this application, please navigate to live deployed version on [Heroku](https://expressnotetakerbytaimur.herokuapp.com/notes) <br/>
+1. From the main page, click the 'Get Started' button to navigate to the notes page.
+2. Click on the 'Note Title' or 'Note Text' section to begin writing your note.
+3. To save a note, click the Save icon, which will appear in the top right of the screen.
+4. To delete a note, click the Trash icon, which will appear next to the respective note in the left-hand column, assuming it was previously saved.
 
 <a name="license"></a>
 ## License
