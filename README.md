@@ -1,9 +1,11 @@
 # ExpressNoteTaker
 ## Description
-The ExpressNoteTaker is an application made using the express.js web application framework and server side programming. The application can allow a user to create, save, and delete notes through a live server-based application hosted on Heroku. The application uses a combination of frontend fetch api requests and backend api routes to provide a seamless and efficient user experience, ensuring that important notes are not missed.
+The ExpressNoteTaker is an application made using the express.js web application framework and server side programming. The application can allow a user to create, save, and delete notes through a live server-based application hosted on Heroku. The application uses a combination of frontend fetch api requests and backend api routes to provide a seamless and efficient user experience, ensuring that important notes are saved and retrievable as needed.
 <br/>
 <br/>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
 **Languages and Technologies Used:
 - Javascript
@@ -15,6 +17,8 @@ The ExpressNoteTaker is an application made using the express.js web application
 - CSS
 
 [Live Application](https://expressnotetakerbytaimur.herokuapp.com/notes)
+
+![Express Note Taker by Taimur Screenshot](./assets/images/Screenshot%202022-05-05%20200108.png);
 
 ## Table of Contents
 
@@ -28,7 +32,7 @@ The ExpressNoteTaker is an application made using the express.js web application
 <a name="usage"></a>
 
 ## Usage
-To use this application, please navigate to live deployed version on [Heroku](https://expressnotetakerbytaimur.herokuapp.com/notes) <br/>
+To use this application, please navigate to live deployed application on [Heroku](https://expressnotetakerbytaimur.herokuapp.com/notes) <br/>
 1. From the main page, click the 'Get Started' button to navigate to the notes page.
 2. Click on the 'Note Title' or 'Note Text' section to begin writing your note.
 3. To save a note, click the Save icon, which will appear in the top right of the screen.
