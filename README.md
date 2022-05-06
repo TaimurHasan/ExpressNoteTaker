@@ -18,7 +18,7 @@ The ExpressNoteTaker is an application made using the express.js web application
 
 [Live Application](https://expressnotetakerbytaimur.herokuapp.com/notes)
 
-![Express Note Taker by Taimur Screenshot](./assets/images/Screenshot%202022-05-05%20200108.png);
+[![Express Note Taker by Taimur Screenshot](./assets/images/Screenshot%202022-05-05%20200108.png)](https://expressnotetakerbytaimur.herokuapp.com/notes);
 
 ## Table of Contents
 
